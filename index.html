@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/banner.css" />
+    <link rel="stylesheet" href="./style/contest.css" />
+    <link rel="stylesheet" href="./style/gala.css" />
+    <link rel="stylesheet" href="./style/signup.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./style/video.css" />
+    <link rel="stylesheet" href="./style/loader.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <link rel="stylesheet" href="./style/animationCard.css" />
+    <title>VHU</title>
+  </head>
+  <body>
+    <header class="header">
+      <i class="fa-solid fa-bars"></i>
+      <img src="asset/img/logoNgang.png" alt="logo" class="logoFull" />
+      <img src="asset/img/logoVHU.png" alt="logo" class="logo" />
+      <div class="nav">
+        <a href="#">Home</a>
+        <a href="#content">Các cuộc thi</a>
+        <a href="#gala">Gala ca nhạc</a>
+        <a href="#video">Các Video VHUER</a>
+      </div>
+      <button class="signup">Đăng ký ngay</button>
+    </header>
+    <section class="banner">
+      <div class="banner_text banner-list" posi="left">
+        <h1>
+          CHÀO ĐÓN
+          <span data-text="TÂN SINH VIÊN K26" class="spanAni"
+            >TÂN SINH VIÊN K26</span
+          >
+          <span>ĐẠI HỌC VĂN HIẾN!</span>
+        </h1>
+        <p>
+          Đăng ký tham gia chương trình chào đón tân sinh viên ngay để chơi hết
+          mình và được cộng 5 điểm rèn luyện.
+        </p>
+        <button class="signup">Đăng ký ngay</button>
+      </div>
+      <div class="banner_img banner-list" posi="right">
+        <div class="banner_1">
+          <img src="asset/img/banner1.png" alt="" />
+        </div>
+        <div class="banner_2">
+          <img src="asset/img/banner2.png" alt="" class="blur" />
+        </div>
+        <div class="banner_3">
+          <img src="asset/img/banner3.png" alt="" class="blur" />
+        </div>
+      </div>
+    </section>
+    <section class="contest" id="content">
+      <div class="contest-title">
+        <h2>CÁC CUỘC THI</h2>
+      </div>
+      <div class="contest-list">
+        <div class="list-img">
+          <img src="asset/svg/shap1.svg" alt="shap" class="img-shap" />
+          <img
+            src="asset/img/section1.png"
+            alt="section"
+            class="img-section1"
+          />
+        </div>
+        <div class="list-text">
+          <div class="text-title"><h3>Hội Trại</h3></div>
+          <div class="text-content">
+            <span
+              >Mỗi khoa của trường sẽ có một giang hàng riêng trưng bài các sản
+              phẩm hình ảnh các hoạt động riêng của khoa.</span
+            >
+            <ul>
+              <li>Trưng bài các cup thi đấu đạt được</li>
+              <li>Trưng bài các sản phẩm mà khoa làm ra</li>
+              <li>
+                Trưng bài các hình ảnh tập thể của khoa của câu lạc bộ..vv
+              </li>
+            </ul>
+            <span
+              >Mỗi khoa sẽ tổ chứng một số các trò chơi minigame như phóng phi
+              tiêu, viết chữ hán nhận quà, hay các trò chơi thử thách trí tuệ
+              khác.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="contest-list">
+        <div class="list-img">
+          <img src="asset/svg/shap2.svg" alt="shap" class="img-shap" />
+          <img
+            src="asset/img/section2.png"
+            alt="section"
+            class="img-section1"
+          />
+          <img
+            src="asset/img/section3.png"
+            alt="section"
+            class="img-section2"
+          />
+        </div>
+        <div class="list-text">
+          <div class="text-title"><h3>TEAMBUILDING</h3></div>
+          <div class="text-content">
+            <span
+              >Mỗi khoa sẽ tổ chức và trag trí một giang hàng ẩm thực riêng để
+              trao đổi mua bán và thi xem giang hàng nào có doanh thu nhiều nhất
+              nhất đồng thời còn giúp cho các bạn thỏa sức sáng tạo trang trí
+              cho giang hàng của mình.</span
+            >
+            <span
+              >Ngoài hoạt động mua bán được tổ chức thì mỗi khoa hay mỗi cây lạc
+              bộ cũng thang gia tổ chức các cuộc thi Teambuilding để tăng tính
+              đoàn kết hơn trong tập thể.
+            </span>
+            <ul>
+              Các cuộc thi Teambuilding thường hay thi.
+              <li>Truyền tin</li>
+              <li>Giật cờ</li>
+              <li>Truyền bóng tiếp sức</li>
+              <li>Đổ nước chai</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="contest-list">
+        <div class="list-img">
+          <img src="asset/svg/shap3.svg" alt="shap" class="img-shap" />
+          <img
+            src="asset/img/section4.png"
+            alt="section"
+            class="img-section3"
+          />
+          <img
+            src="asset/img/section5.png"
+            alt="section"
+            class="img-section4"
+          />
+        </div>
+        <div class="list-text">
+          <div class="text-title"><h3>THI VĂN NGHỆ</h3></div>
+          <div class="text-content">
+            <span
+              >Thành viên đăng ký tham gia đội văn nghệ, tập luyện tiết mục và
+              tham gia thi chọn để chọn ra tiết mục ấn tượng, đặc sắc nhất để
+              tham gia biểu diễn tại gala.</span
+            >
+            <span
+              >Những tiết mục biểu diễn tại Gala đặc sắc nhất và được bình chọn
+              nhiều nhất sẽ được ban tổ chức trao thưởng.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gala" id="gala">
+      <div class="gala-header">
+        <h2>GALA CA NHẠC</h2>
+      </div>
+      <div class="sig">
+        <i class="fa-solid fa-chevron-left"></i>
+        <div class="sig-title">
+          <h3>Các ca sĩ nổi tiếng tham dự</h3>
+        </div>
+        <div class="sig-card">
+          <div class="sig-items">
+            <div class="items-img">
+              <img src="./asset/img/mrb.jpg" alt="" />
+            </div>
+            <div class="items-info">
+              <h4>Mr.B</h4>
+              <span>Ca Sĩ: Hoàng Bách</span>
+            </div>
+          </div>
+          <div class="sig-items">
+            <div class="items-img">
+              <img src="./asset/img/pl.jpg" alt="" />
+            </div>
+            <div class="items-info">
+              <h4>Phương Ly</h4>
+              <span>Ca Sĩ: Trần Phương Ly</span>
+            </div>
+          </div>
+          <div class="sig-items">
+            <div class="items-img">
+              <img src="./asset/img/pdtn.jpg" alt="" />
+            </div>
+            <div class="items-info">
+              <h4>Phạm Đình Thái Ngân</h4>
+              <span>Ca Sĩ: Phạm Đình Thái Ngân</span>
+            </div>
+          </div>
+          <div class="sig-items">
+            <div class="items-img">
+              <img src="./asset/img/sofia.jpg" alt="" />
+            </div>
+            <div class="items-info">
+              <h4>Sofia</h4>
+              <span>Ca Sĩ: Phạm Đan Trang</span>
+            </div>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div class="group">
+        <div class="group-img" posi="left">
+          <img src="asset/svg/shapSig.svg" alt="" />
+          <h2>CÁC TIẾT MỤC BIỂU DIỄN NỔI BẬT CỦA CÁC KHOA</h2>
+        </div>
+        <div class="group-content" posi="right">
+          <p>
+            Không chỉ có những tiết mục biểu diễn của ca sĩ nghệ sĩ mà còn có sự
+            góp mặt của các khoa trong trường đại học văn hiến điển hình như:
+            Khoa Công Nghệ Thông Tin, Khoa Xã Hội Truyền Thông, Khoa Kinh Tế
+            Quảng Trị, Khoa Du Lịch, Khoa Nghệ Thuật..vv.
+          </p>
+          <p>
+            Không chỉ các khoa mà các câu lạc bộ còn tham gia công hiến cho một
+            buổi Gala ca nhạc trở nên hoành tráng nhất có thể để các bạn sinh
+            viên có thể quẩy tung nóc.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="signupSec" id="signupSec">
+      <div></div>
+      <div class="signupSec-title">
+        <h2>ĐĂNG KÝ THAM GIA NGAY TẠI ĐÂY!</h2>
+      </div>
+      <form class="signupSec-form" name="submit-to-google-sheet">
+        <div class="signupSec-input">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder=" "
+            autocomplete="off"
+            textData="Email của bạn"
+          />
+          <label for="email">Email của bạn</label>
+        </div>
+        <div class="signupSec-input">
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder=" "
+            autocomplete="off"
+            textData="Tên của bạn"
+          />
+          <label for="fullname">Tên của bạn</label>
+        </div>
+
+        <div class="signupSec-input input-ops">
+          <input
+            type="text"
+            name="mssv"
+            id="mssv"
+            placeholder=" "
+            autocomplete="off"
+            textData="Mã sinh viên của bạn"
+          />
+          <label for="mssv">Mã sinh viên của bạn</label>
+
+          <div class="signupSec-ops">
+            <input
+              type="text"
+              class="ops-chosse"
+              name="majob"
+              id="majob"
+              placeholder="Chức vụ"
+              autocomplete="off"
+              readonly
+              textData ="Chức vụ"
+            />
+            <div class="ops-list">
+              <span>Đội setup gian hàng</span>
+              <span>Đội tổ chức game mini tại gian hàng</span>
+              <span>Đội tổ chức hoạt động ẩm thực</span>
+              <span>Đội thi teambuiding</span>
+              <span>Đội văn nghệ</span>
+              <span>Đội hậu cần</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="signup requieBtn" type="submit">Đăng ký</button>
+      </form>
+    </section>
+    <section class="video" id="video">
+      <i class="fa-solid fa-chevron-left dis"></i>
+      <h2 class="title">VHU VIDEO</h2>
+      <div class="content-video">
+        <div class="card-video">
+          <iframe
+          width="366"
+          height="200"
+          src="https://www.youtube.com/embed/xYVsgl1i5G0?si=tDtdUoMjgdtHX-6o"
+          title="YouTube video player"
+        ></iframe>
+        <iframe
+          width="366"
+          height="200"
+          src="https://www.youtube.com/embed/wFo3XJNi7CQ?si=_KTwVpUoHb62ZE9t" 
+          title="YouTube video player"
+        ></iframe>
+        <iframe
+          width="366"
+          height="200"
+          src="https://www.youtube.com/embed/Kfo8bSAcgSQ?si=D-m8E3O8jsolGmSI"
+          title="YouTube video player"
+        ></iframe>
+
+        <iframe
+          width="366"
+          height="200"
+          src="https://www.youtube.com/embed/S1ltlfNv91k?si=VcQNTVIIjr4O7hg-"
+          title="YouTube video player"
+        ></iframe>
+        <iframe
+          width="366"
+          height="200"
+          src="https://www.youtube.com/embed/nHnf93-QRic?si=_Qzmkrk9q5FnLUi3"
+          title="YouTube video player"
+        ></iframe>
+          <!-- <iframe
+            width="366"
+            height="200"
+            src="https://www.youtube.com/embed/nHnf93-QRic?si=_Qzmkrk9q5FnLUi3"
+            title="YouTube video player"
+            
+          
+          >
+          ></iframe>
+          <iframe
+            width="366"
+            height="200"
+            src="https://www.youtube.com/embed/S1ltlfNv91k?si=VcQNTVIIjr4O7hg-"
+            title="YouTube video player"
+            
+          
+          >
+          ></iframe>
+          <iframe
+            width="366"
+            height="200"
+            src="https://www.youtube.com/embed/xYVsgl1i5G0?si=tDtdUoMjgdtHX-6o"
+            title="YouTube video player"
+            
+          
+          >
+          ></iframe>
+
+          <iframe 
+          width="366"
+          height="200" 
+          src="https://www.youtube.com/embed/wFo3XJNi7CQ?si=_KTwVpUoHb62ZE9t" title="YouTube video player"
+          
+          
+          ></iframe> >
+        </iframe>
+        
+          <iframe
+            width="366"
+            height="200"
+            src="https://www.youtube.com/embed/Kfo8bSAcgSQ?si=D-m8E3O8jsolGmSI"
+            title="YouTube video player"
+            
+          
+          >
+          ></iframe> -->
+        </div>
+      </div>
+      <i class="fa-solid fa-chevron-right dis"></i>
+      <ul class="videoNum">
+        <li class="num-items"></li>
+        <li class="num-items"></li>
+        <li class="num-items"></li>
+        <li class="num-items"></li>
+        <li class="num-items"></li>
+      </ul>
+    </section>
+    <section class="loader">
+      <div class="loader-box">
+        <div class="loader-header">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="loader-content">
+          <i class="fa-regular fa-circle-check"></i>
+          <span>Bạn Đã Đăng Ký Thành Công! Nhớ Tham Dự Chương Trình Để Được Cộng 5 Điểm Rèn Luyện Và Được Trải Nghiệm Những Hoạt Động Thú Vị Khác Từ Chương Trình...</span>
+          <button class="loader-close">Đóng</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__left">
+          <img src="asset/img/logoNgang.png" alt="" />
+          <div class="footer__box">
+            <div class="footer__left--title">
+              <h4>Trụ sở chính:</h4>
+              <h4>Các cơ sở:</h4>
+            </div>
+            <div class="footer__left--content">
+              <span>613 Âu Cơ, Phường Phú Trung, Quận Tân Phú, TP.HCM</span>
+              <span>624 Âu Cơ, Phường 10, Quận Tân Bình, TP. HCM </span>
+              <span
+                >Khu chức năng 13E- Nguyễn Văn Linh, Phong Phú, Nam Thành phố,
+                TP. HCM</span
+              >
+              <span
+                >736 - 738 - 740 Điện Biên Phủ, Phường 10, Quận 10, TP.
+                HCM</span
+              >
+              <span
+                >665 - 667 - 669 Điện Biên Phủ, Phường 1, Quận 3, TP. HCM</span
+              >
+              <span>2A2 Quốc lộ 1A, Thạnh Xuân, Quận 12, TP.HCM &#40; New &#41;</span>
+              <span
+                >8 - 14 Nguyễn Bá Tuyển, Phường 12, quận Tân Bình, TP.HCM &#40; New &#41</span
+              >
+            </div>
+          </div>
+        </div>
+        <iframe
+          class="footer__map"
+          src="https://maps.google.com/maps?q=%C4%90%E1%BA%A1i%20h%E1%BB%8Dc%20V%C4%83n%20Hi%E1%BA%BFn&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="footer__copyright">
+        <h3>Copyright 2023 © Hồ Nguyên Lộc (nguyenlocDev)</h3>
+      </div>
+      <div class="line">
+        <img src="asset/img/line.png" alt="" class="linend" />
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script src="script/header.js"></script>
+  <script src="script/banner.js"></script>
+  <script src="script/signup.js"></script>
+  <script src="script/gala.js"></script>
+  <script src="script/submit.js"></script>
+  <script src="script/video.js"></script>
+  <script src="script/animationCard.js"></script>
+  <script src="data/sigscript.js"></script>
+</html>

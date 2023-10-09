@@ -1,0 +1,355 @@
+@media screen and (max-width: 10000px) {
+  .header .logo {
+    display: none;
+  }
+  .header i {
+    display: none;
+  }
+  .banner .banner_text span {
+    white-space: pre;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header {
+    /* position: relative; */
+    padding: 0 100px;
+    justify-content: space-between;
+  }
+  .header .logo {
+    display: block;
+    transform: translateX(50%);
+  }
+  .header .logoFull {
+    display: none;
+  }
+  .header i {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: var(--primaryColor);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 20px;
+  }
+  .header .nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 200px;
+    border-radius: 8px;
+    top: 100%;
+    z-index: 100;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity, visibility 0.25s ease-in;
+  }
+  .header .nav a {
+    padding: 10px 0;
+  }
+  .header .signup {
+    margin-left: 0;
+  }
+  .banner {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 200px;
+    align-items: center;
+  }
+  .banner .banner_text {
+    align-items: center;
+    width: 100%;
+  }
+  .banner .banner_text span {
+    text-align: center;
+    white-space: normal;
+  }
+  .banner .banner_text h1 {
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .banner_text p {
+    text-align: center;
+  }
+  .banner .banner_img {
+    margin-top: 100px;
+  }
+  .contest-list {
+    align-items: center;
+  }
+  .contest .contest-title h2 {
+    text-align: center;
+  }
+  .list-img {
+    scale: 1.5;
+  }
+  .contest-list:nth-child(odd) .list-img {
+    margin-right: 50px;
+  }
+  .sig-card {
+    gap: 100px 10px;
+  }
+  .sig-card .sig-items {
+    width: calc(100% / 2 - 10px + 2.5px);
+  }
+  .group-img h2 {
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    left: 40%;
+    top: 50%;
+  }
+  .signupSec {
+    width: 100%;
+    flex-direction: column;
+  }
+  .signupSec-title {
+    width: 100%;
+  }
+  .signupSec-form {
+    width: 100%;
+  }
+  .footer {
+    font-size: 80%;
+  }
+  .footer .footer__info .footer__map {
+    width: 250px;
+    height: 300px;
+  }
+  @keyframes writeText {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header {
+    /* position: relative; */
+    flex-direction: row-reverse;
+    padding: 10px;
+  }
+  .header .logo {
+    display: none;
+  }
+  .header .logoFull {
+    display: block;
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .header .signup {
+    display: none;
+  }
+  .header i {
+    flex-shrink: 0;
+  }
+  .header .nav {
+    /* opacity: 1;
+    visibility: visible; */
+    width: 100%;
+    right: 0;
+  }
+  .banner {
+    padding: 0;
+  }
+  .banner .banner_img {
+    margin-top: 100px;
+    transform: scale(0.7);
+  }
+  .banner .banner_text h1 {
+    font-size: 44px;
+    width: 100%;
+  }
+  .banner .banner_text span {
+    white-space: normal;
+  }
+  .contest {
+    padding: 100px 20px;
+    gap: 150px;
+  }
+  .contest h2 {
+    font-size: 44px;
+  }
+  .contest-list {
+    width: 100%;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 8px;
+  }
+  .contest-list:nth-child(odd) {
+    flex-direction: column;
+  }
+  .list-text {
+    width: 100%;
+    padding: 20px;
+  }
+  .list-img {
+    transform: translateY(-50%);
+  }
+  .gala {
+    padding: 50px 20px;
+    align-items: center;
+  }
+  .gala-header {
+    text-align: center;
+  }
+  .gala-header h2 {
+    font-size: 44px;
+  }
+  .sig {
+    position: relative;
+    overflow: hidden;
+  }
+  .sig i {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    background: #eee;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100rem;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.25s ease;
+  }
+  .sig i:hover {
+    opacity: 1;
+  }
+  .sig .fa-chevron-right {
+    right: 10px;
+  }
+  .sig .fa-chevron-left {
+    left: 10px;
+  }
+  .sig-card {
+    transform: translateX(380px);
+    width: 1000px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s linear;
+  }
+  .sig-card .sig-items {
+    width: 350px;
+  }
+  .sig-card .scaleM {
+    transform: scale(1.1);
+  }
+  .sig-card .scaleS {
+    transform: scale(0.8);
+  }
+  .group {
+    flex-direction: column;
+    gap: 50px 0;
+  }
+  .group-img {
+    width: 100%;
+  }
+  .group-img img {
+    display: none;
+    position: relative;
+  }
+  .group-img h2 {
+    color: var(--colorText);
+    width: 100%;
+    left: 50%;
+    line-height: 30px;
+  }
+  .signupSec {
+    padding: 50px 20px;
+  }
+  .input-ops {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .input-ops input {
+    position: relative;
+    width: 100%;
+  }
+  .input-ops label {
+    top: 21%;
+  }
+  .input-ops .signupSec-ops {
+    width: 100%;
+  }
+
+  .input-ops .signupSec-ops::before {
+    top: 80%;
+  }
+  .group-content {
+    text-align: center;
+  }
+  .loader {
+    width: 380px;
+    height: 330px;
+  }
+  .video {
+    padding: 100px 0;
+  }
+  .video .card-video iframe {
+    width: 250px;
+    height: 150px;
+  }
+  .video .fa-chevron-right {
+    right: 0;
+  }
+  .video .fa-chevron-left {
+    left: 0;
+  }
+  .footer {
+    padding: 50px 30px;
+    padding-bottom: 0;
+  }
+  .footer .footer__info .footer__left .footer__box {
+    width: 100%;
+  }
+  .footer .footer__info .footer__left {
+    width: 100%;
+  }
+  .footer .footer__info .footer__left img {
+    width: 100%;
+  }
+  .footer .footer__info {
+    flex-direction: column;
+    gap: 20px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footer__info .footer__map {
+    width: 350px;
+    height: 250px;
+  }
+  @keyframes writeText {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.gala {
+  padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 50px;
+}
+.gala-header {
+  color: var(--primaryColor);
+  font-size: 40px;
+}
+.sig {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px 0;
+  align-items: center;
+}
+.sig-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+  gap: 0 10px;
+  flex-wrap: wrap;
+}
+.sig-card .sig-items {
+  background: white;
+  position: relative;
+  width: calc(100% / 4 - 10px + 2.5px);
+  height: 150px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sig i {
+  display: none;
+}
+.sig-card .sig-items .items-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 12px;
+}
+.sig-card .sig-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.25s ease;
+}
+.sig-card .sig-items img:hover {
+  scale: 1.2;
+}
+.sig-card .sig-items .items-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+}
+.group {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+  overflow: hidden;
+}
+.group-img {
+  position: relative;
+  width: 35%;
+  flex-shrink: 0;
+  transition: all 0.5s ease;
+}
+.group-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.group-img h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 300px;
+  font-size: 44px;
+  text-align: center;
+  line-height: 65px;
+}
+.group-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  font-size: 20px;
+  flex: 1;
+  justify-content: center;
+  transition: all 0.5s ease;
+}

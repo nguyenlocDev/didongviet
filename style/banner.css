@@ -1,0 +1,114 @@
+.banner {
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  padding: 0 100px;
+  justify-content: space-between;
+}
+.banner .banner_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  justify-content: center;
+  width: 50%;
+  transition: all 0.5s ease;
+  flex-basis: 0;
+}
+.banner .banner_text span {
+  color: var(--primaryColor);
+}
+.banner .banner_text .spanAni {
+  position: relative;
+  color: white;
+  width: auto;
+  -webkit-text-stroke: 0.05vw var(--colorText);
+  white-space: nowrap;
+}
+.banner .banner_text .spanAni::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  color: var(--primaryColor);
+  -webkit-text-stroke: 0vw var(--primaryColor);
+  border-right: 5px solid var(--primaryColor);
+  overflow: hidden;
+  z-index: 10;
+  word-wrap: none;
+  animation: writeText 6s infinite linear;
+}
+@keyframes writeText {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+.banner .banner_text h1 {
+  color: var(--colorText);
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.banner .banner_text p {
+  font-weight: 600;
+}
+.banner .banner_text button {
+  width: 150px;
+}
+.banner .banner_img {
+  position: relative;
+  width: 40%;
+  transition: all 0.5s ease;
+}
+.banner .banner_img img {
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+.banner .banner_img div {
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: rgba(250, 250, 250, 0.4) 0px 4px 20px;
+  transition: position 0.7s, top 0.7s linear;
+  left: 50%;
+  top: 50%;
+}
+.banner .banner_img .ios {
+  transition: transform 2s ease;
+}
+.banner .banner_img .more {
+  transition: all 2s ease;
+}
+.banner .banner_img .banner_1 {
+  z-index: 10;
+  box-shadow: rgba(225, 225, 225, 0.7) 0px 4px 25px;
+}
+.banner .banner_img .banner_2 {
+  width: 350px;
+  height: 150px;
+  top: 100%;
+  transform: translate(-50%, -100%);
+}
+.banner .banner_img .banner_3 {
+  top: 0;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 150px;
+}
+
+.blur {
+  filter: blur(20px);
+}
